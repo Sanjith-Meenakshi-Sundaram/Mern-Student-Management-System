@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const getStudents = () => {
       axios
-        .get("https://sttiss-api.vercel.app/student/get")
+        .get("https://student-attendance-api-rr42.onrender.com/student/get")
         .then((res) => {
           setStudents(res.data);
         })
@@ -34,7 +34,7 @@ export default function Home() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://sttiss-api.vercel.app/student/delete/${id}`)
+          .delete(`https://student-attendance-api-rr42.onrender.com/student/delete/${id}`)
           .then((res) => {
             Swal.fire("Deleted!", res.data.status, "success");
             //update table after deleting
@@ -52,7 +52,8 @@ export default function Home() {
 
   return (
     <div className="text-center mb-4">
-      <h5 style={{ textAlign: "center", padding: "3rem" }}>Students Attendance Sekolah Tinggi Teknologi Informatika Sony Sugema</h5>
+      <h5 style={{ textAlign: "center", padding: "3rem" }}>  <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>Students Attendance</span> Saveetha Engineering College
+      </h5>
       <Link to="/add-student">
         <div className="col-4">
           <button className="btn btn-primary" type="submit">
@@ -67,7 +68,7 @@ export default function Home() {
               <tr>
                 <th scope="col"></th>
                 <th scope="col">Name</th>
-                <th scope="col">Nim</th>
+                <th scope="col">Reg</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Action</th>
               </tr>

@@ -27,7 +27,7 @@ export default function AddStudent() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .post("https://sttiss-api.vercel.app/student/add", newStudent)
+          .post("https://student-attendance-api-rr42.onrender.com/student/add", newStudent)
           .then(() => {
             Swal.fire("Student has been successfully Saved!", "", "success");
             navigate("/");
@@ -64,15 +64,15 @@ export default function AddStudent() {
         </div>
         <div className="mb-3">
           <label for="nim" className="form-label">
-            Student Nim
+            Student Register no
           </label>
           <input
-            type="number"
+            type="text"
             className="form-control"
             id="nim"
-            placeholder="Enter Your Nim"
+            placeholder="Reg No"
             onChange={(e) => {
-              setNim(e.target.value);
+              setNim(e.target.value.replace(/\D/g, ""));
             }}
           />
         </div>
