@@ -40,4 +40,4 @@ A **MERN Stack** web application for managing student attendance at **Saveetha E
 
 ## 📝 License
 This project is licensed under the **MIT License**.  
-See the [Update LICENSE](LICENSE) file for details.
+See the [LICENSE](UpdateLICENSE) file for details.
