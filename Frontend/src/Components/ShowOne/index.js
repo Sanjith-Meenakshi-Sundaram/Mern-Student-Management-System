@@ -63,7 +63,7 @@ const ShowOne = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="nim">Nim</label>
+          <label htmlFor="nim">Student Register no</label>
           <input
             type="text"
             className="form-control"
