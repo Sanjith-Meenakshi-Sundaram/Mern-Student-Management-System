@@ -1,6 +1,7 @@
 # 📘 Student Attendance Management System
 
 A **MERN Stack** web application for managing student attendance at **Saveetha Engineering College**.
+## Try: https://mern-student-management-system-2.vercel.app/
 
 ---
 
